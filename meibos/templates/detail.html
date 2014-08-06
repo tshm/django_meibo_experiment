@@ -1,0 +1,7 @@
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+    <a href="/meibo/delete/{{ id }}">delete</a>
+    <a href="/meibo/">cancel</a>
+</form>
+
